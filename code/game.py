@@ -10,7 +10,7 @@ class Game:
         self.get_joystick()
         self.accumulator = 0.0
         self.clock = pygame.time.Clock()
-        self.screen = pygame.display.set_mode((RES), pygame.FULLSCREEN|pygame.SCALED, vsync=1)
+        self.screen = pygame.display.set_mode((RES), pygame.FULLSCREEN|pygame.SCALED, vsync=0)
         self.font = pygame.font.Font(FONT, 32)
         self.scene = Scene(self)
         self.running = True
